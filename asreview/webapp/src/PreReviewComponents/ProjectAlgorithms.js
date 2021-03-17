@@ -268,6 +268,13 @@ const ProjectAlgorithms = ({project_id, scrollToBottom}) => {
                           >
                             {"Random forest"}
                           </MenuItem>
+                          <MenuItem
+                            checked={algorithms["model"] === "nb_example"}
+                            value="nb_example"
+                            color="default"
+                          >
+                            {"Watson Discovery"}
+                          </MenuItem>
                         </TextField>
 
                         <TextField
