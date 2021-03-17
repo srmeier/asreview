@@ -41,6 +41,7 @@ const algorithmsLabel = {
     {"value": "svm", "label": "Support vector machines"},
     {"value": "logistic", "label": "Logistic regression"},
     {"value": "rf", "label": "Random forest"},
+    {"value": "nb_example", "label": "Watson Discovery"},
   ],
   query_strategy: [
     {"value": "max", "label": "Max"},
