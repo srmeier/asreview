@@ -41,7 +41,7 @@ const algorithmsLabel = {
     {"value": "svm", "label": "Support vector machines"},
     {"value": "logistic", "label": "Logistic regression"},
     {"value": "rf", "label": "Random forest"},
-    {"value": "nb_example", "label": "Watson Discovery"},
+    {"value": "nb_example", "label": "IBM Watson"},
   ],
   query_strategy: [
     {"value": "max", "label": "Max"},
@@ -51,7 +51,7 @@ const algorithmsLabel = {
   feature_extraction: [
     {"value": "tfidf", "label": "tf-idf"},
     {"value": "doc2vec", "label": "Doc2Vec"},
-    {"value": "nb_feat", "label": "Pure Text"},
+    {"value": "nb_feat", "label": "Raw Text"},
   ],
 };
 
@@ -274,7 +274,7 @@ const ProjectAlgorithms = ({project_id, scrollToBottom}) => {
                             value="nb_example"
                             color="default"
                           >
-                            {"Watson Discovery"}
+                            {"IBM Watson"}
                           </MenuItem>
                         </TextField>
 
@@ -339,7 +339,7 @@ const ProjectAlgorithms = ({project_id, scrollToBottom}) => {
                             value="nb_feat"
                             color="default"
                           >
-                            {"Pure Text"}
+                            {"Raw Text"}
                           </MenuItem>
                         </TextField>                        
                       </div>
