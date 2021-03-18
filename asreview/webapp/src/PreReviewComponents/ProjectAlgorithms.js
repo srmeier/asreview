@@ -51,6 +51,7 @@ const algorithmsLabel = {
   feature_extraction: [
     {"value": "tfidf", "label": "tf-idf"},
     {"value": "doc2vec", "label": "Doc2Vec"},
+    {"value": "nb_feat", "label": "Pure Text"},
   ],
 };
 
@@ -331,6 +332,14 @@ const ProjectAlgorithms = ({project_id, scrollToBottom}) => {
                             disabled={algorithms["model"] === "nb"}
                           >
                             {"Doc2Vec"}
+                          </MenuItem>
+    
+                          <MenuItem
+                            checked={algorithms["feature_extraction"] === "nb_feat"}
+                            value="nb_feat"
+                            color="default"
+                          >
+                            {"Pure Text"}
                           </MenuItem>
                         </TextField>                        
                       </div>
